@@ -2789,7 +2789,7 @@ GetDefResult getDefs(const GetDefInput &input)
   }
   else // do one of the two getDefs routines (comment out the other one)
   {
-    return getDefsNew(input);
+    return getDefsOld(input);
   }
 }
 

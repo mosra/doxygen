@@ -6432,6 +6432,7 @@ static void addOverloaded(const Entry *root,MemberName *mn,
 
 static void insertMemberAlias(Definition *outerScope,const MemberDef *md)
 {
+  return; // TODO for some reason the function makes the alias no longer available for linking in @related
   if (outerScope && outerScope!=Doxygen::globalScope)
   {
     auto aliasMd = createMemberDefAlias(outerScope,md);
